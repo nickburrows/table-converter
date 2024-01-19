@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格格式轉換器</title>
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body>
+    <div class="container">
+      <textarea
+        class="mb-4"
+        id="tableInput"
+        rows="10"
+        cols="50"
+        placeholder="在此處貼上表格..."
+      ></textarea>
+      <button type="button" id="convertToJSONButton">轉換為 JSON</button>
+      <button type="button" id="convertToMarkdownButton">
+        轉換為 Markdown
+      </button>
+      <textarea
+        class="mt-4"
+        id="output"
+        placeholder="轉換後的 JSON 會顯示在這裡..."
+      ></textarea>
+      <button type="button" id="copyButton">複製 JSON</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
